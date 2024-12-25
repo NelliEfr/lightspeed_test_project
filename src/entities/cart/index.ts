@@ -1,0 +1,1 @@
+export { default as CartItem } from '@/entities/cart/ui/ui.vue';
