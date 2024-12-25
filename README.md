@@ -81,6 +81,15 @@ The app will be available at [http://localhost:5173](http://localhost:5173).
 
 ---
 
+## Token Information
+For the purpose of this test project, a public token is used. It is stored in the `src/tokens.ts` file, which has been added to the `.gitignore` for security purposes. Since this token is publicly available and the project is intended for testing, we can safely share the following token information:
+
+**Public Token:**
+
+RiNvjTVVzKLhFNWyzR5fNY68u1GMHLEs
+
+---
+
 ## Scripts
 - `npm run dev`: Start the development server
 - `npm run build`: Build the app for production
