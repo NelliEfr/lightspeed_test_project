@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { CartItem } from '@/entities/cart';
+import { ShoppingCartList } from '@/features/shopping-cart-list';
 import { Button } from '@/shared/button';
 import { RouterLink } from 'vue-router';
 import { type CartProduct } from '@/entities/cart/model/types';
@@ -24,9 +25,7 @@ const totalPrice = computed(() => data.items.reduce((acc, el) => acc + (el.price
     <section>
         <Typography tagName="h2">Shopping cart</Typography>
         <div v-if="data.items.length" class="shopping-cart">
-          <div>
-            <CartItem v-for="product in data.items" :key="product.id" :data="product" />
-          </div>
+          <ShoppingCartList :items="data.items" />
           <div class="shopping-cart__order">
             <Typography tagName="p" fontSize="l">Total: € {{ totalPrice.toFixed(2) }}</Typography>
             <Button color="dark" @click="storeModal.openModal">

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Content } from '@/shared/content';
-import { ShoppingCartList } from '@/widgets/shopping-cart-list';
+import { ShoppingCartList } from '@/widgets/shopping-cart';
 import { useShoppingCartStore } from '@/app/stores/shoppingCart';
 import { useModalStore } from '@/app/stores/modal';
 import { ModalWindow } from '@/shared/modal';
